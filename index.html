@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>С Днём Рождения, сестрёнка!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>С Днём Рождения, Адина эже!</h1>
+    <p>Ты — мой самый лучший человек. 💖<br>
+    Пусть в жизни у тебя будет много счастья, любви и исполнения всех мечт!<br>
+    Ты заслуживаешь всего самого прекрасного в этом мире!</p>
+    <div class="heart">❤️</div>
+  </div>
+
+  <!-- Подключаем библиотеку конфетти -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = () => {
+      confetti({
+        particleCount: 180,
+        spread: 100,
+        origin: { y: 0.6 },
+        colors: ['#ffc0cb', '#ffe4e1', '#fffafa', '#ffffff', '#ffb6c1'], // ярко-розовый, нежно-розовый, белый
+      });
+    };
+  </script>
+</body>
+</html>

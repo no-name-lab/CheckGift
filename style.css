@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fff0f5, #ffe4e1); /* светло-розовый градиент */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #4b2c5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background: #ffffff; /* белый фон открытки */
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(255, 182, 193, 0.4); /* нежная тень */
+    max-width: 520px;
+    padding: 40px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    border: 2px solid #ffc0cb; /* светло-розовая рамка */
+  }
+  
+  .card h1 {
+    color: #ff69b4; /* ярко-розовый заголовок */
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #ffe4e1;
+  }
+  
+  .card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #8b4b65;
+  }
+  
+  .heart {
+    color: #ff69b4;
+    font-size: 2.5em;
+    animation: pulse 1.5s infinite;
+    margin-top: 20px;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
